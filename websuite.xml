@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="WebSuite" parallel="tests" thread-count="3">
+
+	<!-- <listeners>
+		<listener class-name="com.appln.reporting.CustomReporter" />
+	</listeners>
+ -->
+	<test name="WebTestCase1">
+		<parameter name="executiontype" value="localenvironment"></parameter>
+		<parameter name="browser" value="chrome"></parameter>
+		<parameter name="platform" value="windows"></parameter>
+		<parameter name="connectionAddress" value=""></parameter>
+		<parameter name="DeviceName" value=""></parameter>
+		<classes>
+			<class name="com.appln.testcases.VerifyBookingFunctionality"></class>
+		</classes>
+	</test>
+
+	<test name="WebTestCase2">
+		<parameter name="executiontype" value="localenvironment"></parameter>
+		<parameter name="browser" value="firefox"></parameter>
+		<parameter name="platform" value="windows"></parameter>
+		<parameter name="connectionAddress" value=""></parameter>
+		<parameter name="DeviceName" value=""></parameter>
+		<classes>
+			<class name="com.appln.testcases.VerifyNationalitySelected">
+			</class>
+		</classes>
+	</test>
+
+	<test name="WebTestCase3">
+		<parameter name="executiontype" value="localenvironment"></parameter>
+		<parameter name="browser" value="ie"></parameter>
+		<parameter name="platform" value="windows"></parameter>
+		<parameter name="connectionAddress" value=""></parameter>
+		<parameter name="DeviceName" value=""></parameter>
+		<classes>
+			<class name="com.appln.testcases.VerifyCurrencySelected"></class>
+		</classes>
+	</test>
+</suite> <!-- Suite -->

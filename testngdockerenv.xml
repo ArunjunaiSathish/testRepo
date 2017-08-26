@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Flows_Suite" preserve-order="true" verbose="1">
+<!-- 	<listeners>
+		<listener class-name="com.appln.reporting.CustomReporter" />
+		<listener class-name="com.appln.utils.RetryListener"></listener>
+		<listener class-name="com.appln.utils.TestListener"></listener>
+	</listeners> -->
+
+	<suite-files>
+	  <!--   <suite-file path="./websuite.xml"></suite-file>
+	   -->  <suite-file path="./mobilesuite.xml"></suite-file>
+	</suite-files>
+	
+</suite> <!-- Suite -->
